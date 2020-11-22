@@ -15,3 +15,7 @@ Para realizar una copia en forma local, seguir los siguientes pasos:
 
 3- Correr la aplicacion creando una nueva instancia de Debug, o presionando F5 en el teclado.
 - Esto iniciara una nueva instancia de la aplicacion web que automaticamente ejecutara tambien los servicios rest
+![](https://raw.githubusercontent.com/diegogravi/medicionhumedad/main/como%20correr%20visual%20studio.jpg)
+4 - Una vez levantada la aplicacion, podra seleccionar cualquiera de las acciones para lo cual le pedira un usuario y contrasena.
+- Utilize > usuario: admin | password: admin123456
+![](https://raw.githubusercontent.com/diegogravi/medicionhumedad/main/login%20screenshot.jpg)
