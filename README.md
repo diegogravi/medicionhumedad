@@ -1,4 +1,6 @@
 # Repositorio del Trabajo Final de Graduación de Licenciatura en informática
+# Autor
+Diego Gravisaco
 # Titulo
 Sistema de medición y predicción inteligente de humedad en tierra 
 # Configuración
