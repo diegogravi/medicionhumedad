@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/OfficeHoteling.Web
+/Web/OfficeHoteling/.vs/OfficeHoteling
+/Web/OfficeHoteling/bin
+/Web/OfficeHoteling/obj/Debug
