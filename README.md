@@ -21,3 +21,4 @@ Para realizar una copia en forma local, seguir los siguientes pasos:
 ![](https://raw.githubusercontent.com/diegogravi/medicionhumedad/main/login%20screenshot.jpg)
 5 - Bajar el [Arduino Ide](https://www.arduino.cc/en/software)
 - agregar la libreria del sensor para arduino uno y conectar en el pin 2 del sensor de humedad
+![](https://github.com/diegogravi/medicionhumedad/blob/main/ide%20arduino.JPG?raw=true)
