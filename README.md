@@ -19,3 +19,5 @@ Para realizar una copia en forma local, seguir los siguientes pasos:
 4 - Una vez levantada la aplicacion, podra seleccionar cualquiera de las acciones para lo cual le pedira un usuario y contrasena.
 - Utilize > usuario: admin | password: admin123456
 ![](https://raw.githubusercontent.com/diegogravi/medicionhumedad/main/login%20screenshot.jpg)
+5 - Bajar el [Arduino Ide](https://www.arduino.cc/en/software)
+- agregar la libreria del sensor para arduino uno y conectar en el pin 2 del sensor de humedad
