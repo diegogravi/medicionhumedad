@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import calendar
 
 def MakeCSV(file_name):
     dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -12,4 +13,12 @@ def MakeCSV(file_name):
     dframe['minute'] = dframe['minute'] + dframe['hour']*60
     dframe.drop('id',inplace=True,axis=1)
     print(dframe.head(10))
-    return dframe
+    days = [calendar.day_name[day] for day in range(0,7)]
+    X_list=[]
+    x_list=[]
+    for day in days:
+        X = dframe.loc[dframe['day_of_week'] == day]
+        x = X.iloc[:,[0,3]].values
+        X_list.append(X)
+        x_list.append(x)
+    return dframe, X_list, x_list
