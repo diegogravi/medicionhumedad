@@ -41,6 +41,3 @@ def DataAnalysis(file_name):
             plt.close()
     print("Data Analysis Completed Succesfully!!!")
     return X_list, x_list
-
-file_name = 'data.csv'
-DataAnalysis(file_name)
