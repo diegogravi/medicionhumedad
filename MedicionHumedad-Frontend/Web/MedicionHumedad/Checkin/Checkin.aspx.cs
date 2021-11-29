@@ -1,6 +1,6 @@
-﻿using OfficeHoteling.Autorizacion;
-using OfficeHoteling.Services;
-using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.Autorizacion;
+using MedicionHumedad.Services;
+using MedicionHumedad.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OfficeHoteling
+namespace MedicionHumedad
 {
     public partial class _Checkin : AuthenticatedPage
     {
@@ -26,13 +26,13 @@ namespace OfficeHoteling
 
         private void BindGridCheckins()
         {
-            GVCheckins.DataSource = GetCheckinByStaffId();
+            GVCheckins.DataSource = GetCheckinByUsuarioId();
             GVCheckins.DataBind();
         }
-        private List<CheckinViewModel> GetCheckinByStaffId()
+        private List<CheckinViewModel> GetCheckinByUsuarioId()
         {
-            int staffId = ((StaffViewModel)Session["Staff"]).Id;
-            var result = _CheckinService.GetCurrentCheckinByStaffId(staffId);
+            int UsuarioId = ((UsuarioViewModel)Session["Usuario"]).Id;
+            var result = _CheckinService.GetCurrentCheckinByUsuarioId(UsuarioId);
             if(result == null)
             {
                 return null;

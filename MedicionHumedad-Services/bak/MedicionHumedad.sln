@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{4A1C5695-5D8D-4624-B989-96E0D171CCC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{4B986430-F5AF-46EB-ABC2-6C7FC9C2B97E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{64E712A8-D36E-438B-A883-12F1F06BF248}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{B4C0A738-190E-46B6-86EC-A7D40A7973E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicionHumedad.Api", "Api\MedicionHumedad.Api\MedicionHumedad.Api.csproj", "{E97C0F80-C480-434D-AA3F-19268897157F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E97C0F80-C480-434D-AA3F-19268897157F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97C0F80-C480-434D-AA3F-19268897157F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97C0F80-C480-434D-AA3F-19268897157F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97C0F80-C480-434D-AA3F-19268897157F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E97C0F80-C480-434D-AA3F-19268897157F} = {4A1C5695-5D8D-4624-B989-96E0D171CCC9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86ADEBD4-D2B2-4091-9A05-751648F3108E}
+	EndGlobalSection
+EndGlobal

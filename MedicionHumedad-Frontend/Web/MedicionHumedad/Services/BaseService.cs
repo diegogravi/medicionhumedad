@@ -5,7 +5,7 @@ using System.Configuration;
 using System.Linq;
 using System.Web;
 
-namespace OfficeHoteling.Services
+namespace MedicionHumedad.Services
 {
     public abstract class BaseService
     {

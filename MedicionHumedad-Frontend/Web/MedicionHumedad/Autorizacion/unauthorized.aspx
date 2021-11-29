@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/SiteLogin.Master" AutoEventWireup="true" CodeBehind="unauthorized.aspx.cs" Inherits="OfficeHoteling._Unauthorized" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/SiteLogin.Master" AutoEventWireup="true" CodeBehind="unauthorized.aspx.cs" Inherits="MedicionHumedad._Unauthorized" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type='text/css'>

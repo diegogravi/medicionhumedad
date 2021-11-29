@@ -1,5 +1,5 @@
-﻿using OfficeHoteling.Services;
-using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.Services;
+using MedicionHumedad.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OfficeHoteling
+namespace MedicionHumedad
 {
     public partial class _Unauthorized : Page
     {

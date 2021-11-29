@@ -1,16 +1,16 @@
-﻿using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.ViewModel;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OfficeHoteling.Services
+namespace MedicionHumedad.Services
 {
     public class ReservaService : BaseService
     {
         private const string getReservaById = "Reservas/GetReservaById";
-        private const string getReservasByStaffId = "Reservas/GetReservasByStaffId";
+        private const string getReservasByUsuarioId = "Reservas/GetReservasByUsuarioId";
         private const string crearReserva = "Reservas/CrearReserva"; 
         private const string inactivateReservaByReservaId = "Reservas/InactivateReservaByReservaId";
 
@@ -56,14 +56,14 @@ namespace OfficeHoteling.Services
 
             return queryResult;
         }
-        public List<ReservaViewModel> GetReservasByStaffId(int staffId)
+        public List<ReservaViewModel> GetReservasByUsuarioId(int UsuarioId)
         {
             List<ReservaViewModel> queryResult = new List<ReservaViewModel>();
             try
             {
-                var request = new RestRequest(getReservasByStaffId, Method.GET);
+                var request = new RestRequest(getReservasByUsuarioId, Method.GET);
 
-                request.AddParameter("staffId", staffId);
+                request.AddParameter("UsuarioId", UsuarioId);
                 queryResult = client.Execute<List<ReservaViewModel>>(request).Data;
             }
             catch (Exception ex)

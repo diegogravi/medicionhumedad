@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OfficeHoteling.ViewModel
+namespace MedicionHumedad.ViewModel
 {
     public class EdificioViewModel
     {

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Staff.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="OfficeHoteling._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Usuario.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MedicionHumedad._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type='text/css'>

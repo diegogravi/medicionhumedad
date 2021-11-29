@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Checkin" Language="C#" MasterPageFile="~/Staff.Master" AutoEventWireup="true" CodeBehind="Checkin.aspx.cs" Inherits="OfficeHoteling._Checkin" %>
+﻿<%@ Page Title="Checkin" Language="C#" MasterPageFile="~/Usuario.Master" AutoEventWireup="true" CodeBehind="Checkin.aspx.cs" Inherits="MedicionHumedad._Checkin" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type='text/css'>

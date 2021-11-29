@@ -1,12 +1,12 @@
-﻿using OfficeHoteling.Services;
-using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.Services;
+using MedicionHumedad.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 
-namespace OfficeHoteling.Autorizacion
+namespace MedicionHumedad.Autorizacion
 {
     public abstract class AuthenticatedPage : Page
     {
@@ -42,10 +42,10 @@ namespace OfficeHoteling.Autorizacion
             get { return (CheckoutService)Session["CheckoutService"]; }
             set { Session["CheckoutService"] = value; }
         }
-        protected StaffService _StaffService
+        protected UsuarioService _UsuarioService
         {
-            get { return (StaffService)Session["StaffService"]; }
-            set { Session["StaffService"] = value; }
+            get { return (UsuarioService)Session["UsuarioService"]; }
+            set { Session["UsuarioService"] = value; }
         }
 
         protected bool isLoggedIn
@@ -60,16 +60,16 @@ namespace OfficeHoteling.Autorizacion
                 HttpContext.Current.Session["IsLoggedIn"] = value;
             }
         }
-        protected StaffViewModel staff
+        protected UsuarioViewModel Usuario
         {
             get
             {
-                object SessionObject = HttpContext.Current.Session["Staff"];
-                return (SessionObject == null) ? new StaffViewModel() : (StaffViewModel)SessionObject;
+                object SessionObject = HttpContext.Current.Session["Usuario"];
+                return (SessionObject == null) ? new UsuarioViewModel() : (UsuarioViewModel)SessionObject;
             }
             set
             {
-                HttpContext.Current.Session["Staff"] = value;
+                HttpContext.Current.Session["Usuario"] = value;
             }
         }
         public void IsLoggedIn()
@@ -81,7 +81,7 @@ namespace OfficeHoteling.Autorizacion
         }
         public void IsPersonalAuxiliar()
         {
-            if (staff != null && !staff.EsPersonalAuxiliar)
+            if (Usuario != null && !Usuario.EsAdminOIrrigador)
             {
                 HttpContext.Current.Response.Redirect("~/Autorizacion/unauthorized.aspx");
             }

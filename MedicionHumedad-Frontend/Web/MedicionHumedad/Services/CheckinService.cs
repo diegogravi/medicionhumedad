@@ -1,16 +1,16 @@
-﻿using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.ViewModel;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OfficeHoteling.Services
+namespace MedicionHumedad.Services
 {
     public class CheckinService : BaseService
     {
         private const string checkinByReservaIdd = "Checkin/CheckinByReservaId";
-        private const string getCurrentCheckinByStaffId = "Checkin/GetCurrentCheckinByStaffId";
+        private const string getCurrentCheckinByUsuarioId = "Checkin/GetCurrentCheckinByUsuarioId";
         private const string inactivateCheckinByCheckinId = "Checkin/InactivateCheckinByCheckinId";
 
         public bool InactivateCheckinByCheckinId(int checkinId)
@@ -61,14 +61,14 @@ namespace OfficeHoteling.Services
 
             return queryResult;
         }
-        public CheckinViewModel GetCurrentCheckinByStaffId(int staffId)
+        public CheckinViewModel GetCurrentCheckinByUsuarioId(int UsuarioId)
         {
             CheckinViewModel queryResult = new CheckinViewModel();
             try
             {
-                var request = new RestRequest(getCurrentCheckinByStaffId, Method.GET);
+                var request = new RestRequest(getCurrentCheckinByUsuarioId, Method.GET);
 
-                request.AddParameter("staffId", staffId);
+                request.AddParameter("UsuarioId", UsuarioId);
                 queryResult = client.Execute<CheckinViewModel>(request).Data;
             }
             catch (Exception ex)

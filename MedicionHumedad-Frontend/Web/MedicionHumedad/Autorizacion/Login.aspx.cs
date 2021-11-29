@@ -1,5 +1,5 @@
-﻿using OfficeHoteling.Services;
-using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.Services;
+using MedicionHumedad.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OfficeHoteling
+namespace MedicionHumedad
 {
     public partial class _Login : Page
     {
@@ -32,7 +32,7 @@ namespace OfficeHoteling
             string guid = txtUser.Text.Trim();
             string password = txtPassword.Text.Trim();
 
-            ServiceResult<StaffViewModel> result = _LoginService.Login(guid, password);
+            ServiceResult<UsuarioViewModel> result = _LoginService.Login(guid, password);
             if(!result.Success)
             {
                 lblResult.Text = result.Msg;
@@ -40,7 +40,7 @@ namespace OfficeHoteling
             else
             {
                 Session["IsLoggedIn"] = true;
-                Session["Staff"] = result.Data;
+                Session["Usuario"] = result.Data;
                 Response.Redirect("~/Default.aspx");
             }
         }

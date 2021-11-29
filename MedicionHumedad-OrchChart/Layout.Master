@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.Master.cs" Inherits="WebSampleBrowser.Layout" %>
+<%@ Register Src="~/LeftColumn.ascx" TagName="LeftColumn" TagPrefix="Syncfusion" %>
+<%@ Register Src="~/LayoutHeader.ascx" TagName="LayoutHeader" TagPrefix="Syncfusion" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title>Essential Studio JS 1 for ASP.NET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For Windows Phone 8 issue with touch selection background color -->
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="description" content="Essential Studio for ASP.NET is a set of server-side wrappers with rich designer support, server-side events, and better ViewState handling."/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author" content="Syncfusion"/>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/ejthemes/ej.widgets.core.min.css" rel="stylesheet" />
+    <link href="Content/ejthemes/flat-lime/ej.theme.min.css" rel="stylesheet" />
+    <link href="Content/sampleBrowserSite.css" rel="stylesheet" />
+    <link href="Content/sampleBrowserSite-responsive.css" rel="stylesheet" />
+    <link href="Content/SourceTabFormatter.css" rel="stylesheet" />
+	<link href="Content/diagram/drawingtools/drawingtools.css" rel="stylesheet" />
+    <link href="Content/ejthemes/responsive-css/ej.responsive.css" rel="stylesheet" />
+    <link href="Content/codemirror.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.11.3.min.js")%>' type="text/javascript"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-3.4.1.min.js")%>' type="text/javascript"></script>
+    <!--<![endif]-->
+  
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jsviews.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jquery.easing-1.3.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/pivotgrid.datasource.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/ej.web.all.min.js")%>' type="text/javascript"></script>
+	<script src='<%= Page.ResolveClientUrl("~/Scripts/cultures/ej.culture.en-US.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/cultures/ej.culture.fr-FR.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/cultures/ej.culture.es-ES.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/ej.webform.min.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jsondatachart.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/jsonspark.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/sampleBrowserSite.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/sampleslist.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/properties.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/rgbcolor.js") %>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/ZeroClipboard.js")%>' type="text/javascript"></script>
+    <script src='<%= Page.ResolveClientUrl("~/Scripts/CopyToClipboard.js")%>' type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>  <%--class="fixed-layout" style="visibility:hidden">  --%>  
+
+    <form runat="server">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a runat="server" href="https://localhost:44380/Default"><asp:Image ID="Image1" runat="server" Height="42px" ImageUrl="~/images/siglo21.png" Width="40px" /></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a class="navbar-brand" runat="server" href="~/">
+                    </a>
+                &nbsp;</div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="http://localhost:50723/chart/defaultfunctionalities.aspx">Historial Humedad en suelo</a></li>
+                        <li><a runat="server" href="~/Reservas/CrearReserva">Crear Humedad en suelo</a></li>  
+                        </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <asp:HyperLink ID="hlUsuarioHome" NavigateUrl="~/Usuario/UsuarioHome.aspx" runat="server">Administrar Usuarios</asp:HyperLink>
+                            <%--<a runat="server" runat="server" id="" href="~/Usuario/UsuarioHome">Mis Reservas</a>--%>
+                        </li>
+                        <li  class="active"><a href="#"><asp:Image ID="Image2" runat="server" Height="20px" ImageUrl="~/images/profile_icon.png" Width="20px"  /> <asp:Label ID="LblName" runat="server" Text=""></asp:Label></a></li>
+                        <li>
+                            <asp:LinkButton ID="lnkLogout" runat="server" >Logout</asp:LinkButton>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container body-content" style="margin-top: 50px">
+            <asp:ContentPlaceHolder ID="LayoutSection" runat="server">
+                            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p style="color:white;">&copy; <%: DateTime.Now.Year %> - Aplicacion Seminario Final por Diego Gravisaco</p>
+            </footer>
+        </div>
+
+    </form>
+  
+        <script type="text/javascript">
+            //For HTC Windows Phone Width issue
+            $(function () {
+                if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                    var msViewportStyle = document.createElement("style");
+                    msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+                    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+                }
+            });
+
+            $(document).ready(function () {
+                $('body, .jslogo').css('visibility', 'visible');
+                $('#slidepanel').removeClass('hideIcon');
+            });
+        </script>
+       
+
+        
+</body>
+</html>

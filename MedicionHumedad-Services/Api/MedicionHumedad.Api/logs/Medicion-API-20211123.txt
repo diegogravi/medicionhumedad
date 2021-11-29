@@ -1,0 +1,240 @@
+===> 2021-11-23 16:21:24.579 -05:00 [Information] Starting web host
+===> 2021-11-23 16:21:25.579 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-11-23 16:21:26.072 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger  
+===> 2021-11-23 16:21:26.269 -05:00 [Information] Request finished in 206.3295ms 301 
+===> 2021-11-23 16:21:26.312 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-11-23 16:21:26.498 -05:00 [Information] Request finished in 186.5728ms 200 text/html;charset=utf-8
+===> 2021-11-23 16:21:26.529 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui.css  
+===> 2021-11-23 16:21:26.530 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui-standalone-preset.js  
+===> 2021-11-23 16:21:26.530 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui-bundle.js  
+===> 2021-11-23 16:21:26.635 -05:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+===> 2021-11-23 16:21:26.635 -05:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+===> 2021-11-23 16:21:26.643 -05:00 [Information] Request finished in 114.7532ms 200 text/css
+===> 2021-11-23 16:21:26.643 -05:00 [Information] Request finished in 112.8118ms 200 application/javascript
+===> 2021-11-23 16:21:26.644 -05:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+===> 2021-11-23 16:21:26.645 -05:00 [Information] Request finished in 114.5321ms 200 application/javascript
+===> 2021-11-23 16:21:27.105 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-11-23 16:21:27.284 -05:00 [Information] Request finished in 180.3255ms 200 application/json;charset=utf-8
+===> 2021-11-23 16:21:27.817 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=dgravisaco001&password=Racing13  
+===> 2021-11-23 16:21:27.833 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:21:27.981 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:21:29.285 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:21:31.006 -05:00 [Information] Executed DbCommand ("186"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-11-23 16:21:31.132 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:21:31.153 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 3164.2448ms
+===> 2021-11-23 16:21:31.155 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:21:31.159 -05:00 [Information] Request finished in 3342.5534ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:21:37.884 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-11-23 16:21:37.891 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:21:37.898 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:21:37.941 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:21:37.981 -05:00 [Information] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-11-23 16:21:38.027 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:21:38.030 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 132.3394ms
+===> 2021-11-23 16:21:38.031 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:21:38.031 -05:00 [Information] Request finished in 148.3467ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:22:04.530 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-11-23 16:22:04.536 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:22:04.537 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:22:04.557 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:22:04.578 -05:00 [Information] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-11-23 16:22:04.581 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:22:04.586 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 46.498ms
+===> 2021-11-23 16:22:04.591 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:22:04.592 -05:00 [Information] Request finished in 62.4597ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:23:43.002 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=dgravisaco001&password=Racing13  
+===> 2021-11-23 16:23:43.007 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:23:43.009 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:23:43.016 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:23:43.035 -05:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-11-23 16:23:43.038 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:23:43.042 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 32.7545ms
+===> 2021-11-23 16:23:43.047 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:23:43.047 -05:00 [Information] Request finished in 45.3091ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:23:46.402 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-11-23 16:23:46.404 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:23:46.406 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:23:46.412 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:23:46.430 -05:00 [Information] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-11-23 16:23:46.435 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:23:46.438 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 31.6225ms
+===> 2021-11-23 16:23:46.439 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:23:46.440 -05:00 [Information] Request finished in 38.2366ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:23:53.645 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:49963/api/Usuario/ActivateUsuarioByUsuarioId application/json 1
+===> 2021-11-23 16:23:53.646 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.ActivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:23:53.656 -05:00 [Information] Route matched with "{action = \"ActivateUsuarioByUsuarioId\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ActivateUsuarioByUsuarioId(Int32)" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:23:53.748 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:23:53.779 -05:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__id_0"
+===> 2021-11-23 16:23:53.830 -05:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__p_0"
+===> 2021-11-23 16:23:53.992 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Boolean"'.
+===> 2021-11-23 16:23:53.994 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.ActivateUsuarioByUsuarioId (MedicionHumedad.Api)" in 336.9165ms
+===> 2021-11-23 16:23:53.994 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.ActivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:23:53.994 -05:00 [Information] Request finished in 352.4575ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:27:47.266 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:49963/api/Usuario/InactivateUsuarioByUsuarioId application/json 1
+===> 2021-11-23 16:27:47.274 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.InactivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:47.291 -05:00 [Information] Route matched with "{action = \"InactivateUsuarioByUsuarioId\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InactivateUsuarioByUsuarioId(Int32)" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:27:47.301 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:27:47.328 -05:00 [Information] Executed DbCommand ("21"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__id_0"
+===> 2021-11-23 16:27:47.361 -05:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__p_0"
+===> 2021-11-23 16:27:47.542 -05:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Usuario] SET [Activo] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+===> 2021-11-23 16:27:47.593 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Boolean"'.
+===> 2021-11-23 16:27:47.595 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.InactivateUsuarioByUsuarioId (MedicionHumedad.Api)" in 302.8694ms
+===> 2021-11-23 16:27:47.596 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.InactivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:47.596 -05:00 [Information] Request finished in 330.3028ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:27:47.599 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-11-23 16:27:47.600 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:47.601 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:27:47.603 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:27:47.606 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-11-23 16:27:47.614 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:27:47.616 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 14.8562ms
+===> 2021-11-23 16:27:47.616 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:47.616 -05:00 [Information] Request finished in 17.4403ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:27:57.315 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:49963/api/Usuario/ActivateUsuarioByUsuarioId application/json 1
+===> 2021-11-23 16:27:57.317 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.ActivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:57.318 -05:00 [Information] Route matched with "{action = \"ActivateUsuarioByUsuarioId\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ActivateUsuarioByUsuarioId(Int32)" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:27:57.328 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:27:57.334 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__id_0"
+===> 2021-11-23 16:27:57.341 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__p_0"
+===> 2021-11-23 16:27:57.347 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Usuario] SET [Activo] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+===> 2021-11-23 16:27:57.356 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Boolean"'.
+===> 2021-11-23 16:27:57.358 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.ActivateUsuarioByUsuarioId (MedicionHumedad.Api)" in 38.9289ms
+===> 2021-11-23 16:27:57.358 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.ActivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:57.358 -05:00 [Information] Request finished in 46.0169ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:27:57.360 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-11-23 16:27:57.360 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:57.361 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:27:57.362 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:27:57.364 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-11-23 16:27:57.366 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:27:57.367 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 5.6457ms
+===> 2021-11-23 16:27:57.367 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:27:57.367 -05:00 [Information] Request finished in 7.5856ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:28:13.800 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:49963/api/Usuario/InactivateUsuarioByUsuarioId application/json 1
+===> 2021-11-23 16:28:13.801 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.InactivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:13.803 -05:00 [Information] Route matched with "{action = \"InactivateUsuarioByUsuarioId\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InactivateUsuarioByUsuarioId(Int32)" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:28:13.811 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:28:13.819 -05:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__id_0"
+===> 2021-11-23 16:28:13.830 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[Id] = @__p_0"
+===> 2021-11-23 16:28:13.843 -05:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Usuario] SET [Activo] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+===> 2021-11-23 16:28:13.847 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Boolean"'.
+===> 2021-11-23 16:28:13.848 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.InactivateUsuarioByUsuarioId (MedicionHumedad.Api)" in 44.9622ms
+===> 2021-11-23 16:28:13.849 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.InactivateUsuarioByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:13.849 -05:00 [Information] Request finished in 49.3592ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:28:13.854 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-11-23 16:28:13.855 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:13.856 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:28:13.858 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:28:13.862 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-11-23 16:28:13.867 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:28:13.872 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 16.0531ms
+===> 2021-11-23 16:28:13.873 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:13.873 -05:00 [Information] Request finished in 19.6981ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:28:23.136 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=pparker001&password=Racing13  
+===> 2021-11-23 16:28:23.137 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:23.138 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:28:23.142 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:28:23.147 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-11-23 16:28:23.150 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:28:23.152 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 13.5033ms
+===> 2021-11-23 16:28:23.153 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:23.153 -05:00 [Information] Request finished in 17.2161ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:28:28.378 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=dgravisaco001&password=Racing13  
+===> 2021-11-23 16:28:28.379 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:28.381 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:28:28.388 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:28:28.396 -05:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-11-23 16:28:28.398 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:28:28.399 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 17.8975ms
+===> 2021-11-23 16:28:28.400 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:28.401 -05:00 [Information] Request finished in 22.6108ms 200 application/json; charset=utf-8
+===> 2021-11-23 16:28:31.463 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Edificio/GetAllEdificios  
+===> 2021-11-23 16:28:31.470 -05:00 [Information] Request finished in 7.1873ms 404 
+===> 2021-11-23 16:28:36.004 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-11-23 16:28:36.005 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:36.007 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-11-23 16:28:36.009 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-11-23 16:28:36.014 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-11-23 16:28:36.018 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-11-23 16:28:36.019 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 11.6836ms
+===> 2021-11-23 16:28:36.020 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-11-23 16:28:36.020 -05:00 [Information] Request finished in 16.2908ms 200 application/json; charset=utf-8
+===> 2021-11-23 20:46:29.311 -05:00 [Information] Starting web host
+===> 2021-11-23 20:46:30.110 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-11-23 20:46:30.513 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger  
+===> 2021-11-23 20:46:30.620 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-11-23 20:46:30.760 -05:00 [Information] Request finished in 141.3817ms 301 
+===> 2021-11-23 20:46:30.898 -05:00 [Information] Request finished in 278.8909ms 200 text/html;charset=utf-8
+===> 2021-11-23 20:46:30.940 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui-bundle.js  
+===> 2021-11-23 20:46:30.941 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui.css  
+===> 2021-11-23 20:46:30.942 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui-standalone-preset.js  
+===> 2021-11-23 20:46:31.005 -05:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+===> 2021-11-23 20:46:31.005 -05:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+===> 2021-11-23 20:46:31.005 -05:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+===> 2021-11-23 20:46:31.008 -05:00 [Information] Request finished in 67.0378ms 200 text/css
+===> 2021-11-23 20:46:31.008 -05:00 [Information] Request finished in 68.1244ms 200 application/javascript
+===> 2021-11-23 20:46:31.008 -05:00 [Information] Request finished in 66.0507ms 200 application/javascript
+===> 2021-11-23 20:46:31.342 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-11-23 20:46:31.607 -05:00 [Information] Request finished in 265.8439ms 200 application/json;charset=utf-8
