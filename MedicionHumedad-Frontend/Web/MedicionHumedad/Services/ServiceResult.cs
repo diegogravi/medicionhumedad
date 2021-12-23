@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OfficeHoteling.Services
+namespace MedicionHumedad.Services
 {
     public class ServiceResult<T>
     {

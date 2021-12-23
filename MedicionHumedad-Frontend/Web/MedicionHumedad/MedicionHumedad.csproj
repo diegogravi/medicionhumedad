@@ -150,8 +150,6 @@
     <Content Include="About.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Autorizacion\unauthorized.aspx" />
-    <Content Include="Checkin\Checkin.aspx" />
-    <Content Include="Checkout\Checkout.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -169,11 +167,11 @@
     <Content Include="images\inactivate_icon.png" />
     <Content Include="images\login.jpg" />
     <Content Include="images\profile_icon.png" />
-    <Content Include="images\reserva.jpg" />
-    <Content Include="images\staff.jpg" />
+    <Content Include="images\medicion.jpg" />
+    <Content Include="images\Usuario.jpg" />
     <Content Include="images\unauthorized.jpg" />
-    <Content Include="Reservas\MisReservas.aspx" />
-    <Content Include="Reservas\CrearReserva.aspx" />
+    <Content Include="Medicion\MisMediciones.aspx" />
+    <Content Include="Medicion\CrearMedicion.aspx" />
     <Content Include="Autorizacion\Login.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -191,6 +189,8 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="images\fondo.jpg" />
     <Content Include="images\siglo21.png" />
+    <Content Include="Plantacion\CrearPlantacion.aspx" />
+    <Content Include="Plantacion\Plantacion.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -219,8 +219,10 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Sensor\CrearSensor.aspx" />
+    <Content Include="Sensor\Sensor.aspx" />
     <Content Include="Site.Master" />
-    <Content Include="Staff\StaffHome.aspx" />
+    <Content Include="Usuario\UsuarioHome.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -254,20 +256,6 @@
     <Compile Include="Autorizacion\unauthorized.aspx.designer.cs">
       <DependentUpon>unauthorized.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Checkin\Checkin.aspx.cs">
-      <DependentUpon>Checkin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Checkin\Checkin.aspx.designer.cs">
-      <DependentUpon>Checkin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Checkout\Checkout.aspx.cs">
-      <DependentUpon>Checkout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Checkout\Checkout.aspx.designer.cs">
-      <DependentUpon>Checkout.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -275,19 +263,19 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Reservas\MisReservas.aspx.cs">
-      <DependentUpon>MisReservas.aspx</DependentUpon>
+    <Compile Include="Medicion\MisMediciones.aspx.cs">
+      <DependentUpon>MisMediciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Reservas\MisReservas.aspx.designer.cs">
-      <DependentUpon>MisReservas.aspx</DependentUpon>
+    <Compile Include="Medicion\MisMediciones.aspx.designer.cs">
+      <DependentUpon>MisMediciones.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Reservas\CrearReserva.aspx.cs">
-      <DependentUpon>CrearReserva.aspx</DependentUpon>
+    <Compile Include="Medicion\CrearMedicion.aspx.cs">
+      <DependentUpon>CrearMedicion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Reservas\CrearReserva.aspx.designer.cs">
-      <DependentUpon>CrearReserva.aspx</DependentUpon>
+    <Compile Include="Medicion\CrearMedicion.aspx.designer.cs">
+      <DependentUpon>CrearMedicion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Autorizacion\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -306,6 +294,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Plantacion\CrearPlantacion.aspx.cs">
+      <DependentUpon>CrearPlantacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantacion\CrearPlantacion.aspx.designer.cs">
+      <DependentUpon>CrearPlantacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plantacion\Plantacion.aspx.cs">
+      <DependentUpon>Plantacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantacion\Plantacion.aspx.designer.cs">
+      <DependentUpon>Plantacion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -314,22 +316,34 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Services\BaseService.cs" />
-    <Compile Include="Services\CheckoutService.cs" />
-    <Compile Include="Services\CheckinService.cs" />
-    <Compile Include="Services\EspacioService.cs" />
-    <Compile Include="Services\PisoService.cs" />
-    <Compile Include="Services\EdificioService.cs" />
-    <Compile Include="Services\ReservaService.cs" />
-    <Compile Include="Services\LoginService.cs" />
-    <Compile Include="Services\ServiceResult.cs" />
-    <Compile Include="Services\StaffService.cs" />
-    <Compile Include="Staff.Master.cs">
-      <DependentUpon>Staff.Master</DependentUpon>
+    <Compile Include="Sensor\CrearSensor.aspx.cs">
+      <DependentUpon>CrearSensor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Staff.Master.designer.cs">
-      <DependentUpon>Staff.Master</DependentUpon>
+    <Compile Include="Sensor\CrearSensor.aspx.designer.cs">
+      <DependentUpon>CrearSensor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sensor\Sensor.aspx.cs">
+      <DependentUpon>Sensor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sensor\Sensor.aspx.designer.cs">
+      <DependentUpon>Sensor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\SensorService.cs" />
+    <Compile Include="Services\FrutoService.cs" />
+    <Compile Include="Services\PlantacionService.cs" />
+    <Compile Include="Services\MedicionService.cs" />
+    <Compile Include="Services\LoginService.cs" />
+    <Compile Include="Services\ServiceResult.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
+    <Compile Include="Usuario.Master.cs">
+      <DependentUpon>Usuario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario.Master.designer.cs">
+      <DependentUpon>Usuario.Master</DependentUpon>
     </Compile>
     <Compile Include="SiteLogin.Master.cs">
       <DependentUpon>SiteLogin.Master</DependentUpon>
@@ -352,19 +366,19 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="Staff\StaffHome.aspx.cs">
-      <DependentUpon>StaffHome.aspx</DependentUpon>
+    <Compile Include="Usuario\UsuarioHome.aspx.cs">
+      <DependentUpon>UsuarioHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Staff\StaffHome.aspx.designer.cs">
-      <DependentUpon>StaffHome.aspx</DependentUpon>
+    <Compile Include="Usuario\UsuarioHome.aspx.designer.cs">
+      <DependentUpon>UsuarioHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\EspacioViewModel.cs" />
-    <Compile Include="ViewModel\PisoViewModel.cs" />
-    <Compile Include="ViewModel\EdificioViewModel.cs" />
-    <Compile Include="ViewModel\ReservaViewModel.cs" />
-    <Compile Include="ViewModel\CheckinViewModel.cs" />
-    <Compile Include="ViewModel\StaffViewModel.cs" />
+    <Compile Include="ViewModel\SensorViewModel.cs" />
+    <Compile Include="ViewModel\FrutoViewModel.cs" />
+    <Compile Include="ViewModel\PlantacionViewModel.cs" />
+    <Compile Include="ViewModel\MedicionViewModel.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\UsuarioViewModel.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -380,7 +394,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="Staff.Master" />
+    <Content Include="Usuario.Master" />
     <Content Include="Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

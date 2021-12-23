@@ -1,51 +1,40 @@
-﻿using OfficeHoteling.Services;
-using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.Services;
+using MedicionHumedad.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 
-namespace OfficeHoteling.Autorizacion
+namespace MedicionHumedad.Autorizacion
 {
     public abstract class AuthenticatedPage : Page
     {
         //Services
-        protected EspacioService _EspacioService
+        protected UsuarioService _UsuarioService
         {
-            get { return (EspacioService)Session["EspacioService"]; }
-            set { Session["EspacioService"] = value; }
+            get { return (UsuarioService)Session["UsuarioService"]; }
+            set { Session["UsuarioService"] = value; }
         }
-        protected EdificioService _EdificioService
+        protected MedicionService _MedicionService
         {
-            get { return (EdificioService)Session["EdificioService"]; }
-            set { Session["EdificioService"] = value; }
+            get { return (MedicionService)Session["MedicionService"]; }
+            set { Session["MedicionService"] = value; }
         }
-        protected PisoService _PisoService
+        protected PlantacionService _PlantacionService
         {
-            get { return (PisoService)Session["PisoService"]; }
-            set { Session["PisoService"] = value; }
+            get { return (PlantacionService)Session["PlantacionService"]; }
+            set { Session["PlantacionService"] = value; }
         }
-
-        protected ReservaService _ReservaService
+        protected FrutoService _FrutoService
         {
-            get { return (ReservaService)Session["ReservaService"]; }
-            set { Session["ReservaService"] = value; }
+            get { return (FrutoService)Session["FrutoService"]; }
+            set { Session["FrutoService"] = value; }
         }
-        protected CheckinService _CheckinService
+        protected SensorService _SensorService
         {
-            get { return (CheckinService)Session["CheckinService"]; }
-            set { Session["CheckinService"] = value; }
-        }
-        protected CheckoutService _CheckoutService
-        {
-            get { return (CheckoutService)Session["CheckoutService"]; }
-            set { Session["CheckoutService"] = value; }
-        }
-        protected StaffService _StaffService
-        {
-            get { return (StaffService)Session["StaffService"]; }
-            set { Session["StaffService"] = value; }
+            get { return (SensorService)Session["SensorService"]; }
+            set { Session["SensorService"] = value; }
         }
 
         protected bool isLoggedIn
@@ -60,16 +49,16 @@ namespace OfficeHoteling.Autorizacion
                 HttpContext.Current.Session["IsLoggedIn"] = value;
             }
         }
-        protected StaffViewModel staff
+        protected UsuarioViewModel Usuario
         {
             get
             {
-                object SessionObject = HttpContext.Current.Session["Staff"];
-                return (SessionObject == null) ? new StaffViewModel() : (StaffViewModel)SessionObject;
+                object SessionObject = HttpContext.Current.Session["Usuario"];
+                return (SessionObject == null) ? new UsuarioViewModel() : (UsuarioViewModel)SessionObject;
             }
             set
             {
-                HttpContext.Current.Session["Staff"] = value;
+                HttpContext.Current.Session["Usuario"] = value;
             }
         }
         public void IsLoggedIn()
@@ -81,7 +70,7 @@ namespace OfficeHoteling.Autorizacion
         }
         public void IsPersonalAuxiliar()
         {
-            if (staff != null && !staff.EsPersonalAuxiliar)
+            if (Usuario != null && !Usuario.EsAdminOIrrigador)
             {
                 HttpContext.Current.Response.Redirect("~/Autorizacion/unauthorized.aspx");
             }

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OfficeHoteling
+namespace MedicionHumedad
 {
 
 

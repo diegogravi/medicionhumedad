@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="OfficeHoteling.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="MedicionHumedad.Global" Language="C#" %>

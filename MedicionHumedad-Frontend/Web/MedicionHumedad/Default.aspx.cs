@@ -1,4 +1,4 @@
-﻿using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.ViewModel;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OfficeHoteling
+namespace MedicionHumedad
 {
     public partial class _Default : Page
     {
@@ -17,7 +17,6 @@ namespace OfficeHoteling
         {
             if(!IsPostBack)
             {
-
             }
         }
 

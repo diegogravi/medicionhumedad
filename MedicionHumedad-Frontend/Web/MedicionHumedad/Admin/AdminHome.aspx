@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminHome.aspx.cs" Inherits="OfficeHoteling._AdminHome" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminHome.aspx.cs" Inherits="MedicionHumedad._AdminHome" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type='text/css'>
@@ -8,7 +8,7 @@
             <h1>Office Hoteling</h1>
             <p class="lead">Administre y cree todas sus reservas de sus espacios de trabajo en la oficina.</p>
             <p>
-                    <a class="btn btn-primary" runat="server" href="~/Reservas/CrearReserva">Crear Reserva &raquo;</a>
+                    <a class="btn btn-primary" runat="server" href="~/Medicion/CrearMedicion">Crear Medicion &raquo;</a>
             </p>
         </div>
 

@@ -1,26 +1,26 @@
-﻿using OfficeHoteling.ViewModel;
+﻿using MedicionHumedad.ViewModel;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OfficeHoteling.Services
+namespace MedicionHumedad.Services
 {
     public class LoginService : BaseService
     {
         private const string loginMethd = "Login/Login";
 
-        public ServiceResult<StaffViewModel> Login(string guid, string password)
+        public ServiceResult<UsuarioViewModel> Login(string guid, string password)
         {
-            ServiceResult<StaffViewModel> queryResult = new ServiceResult<StaffViewModel>();
+            ServiceResult<UsuarioViewModel> queryResult = new ServiceResult<UsuarioViewModel>();
             try
             {
                 var request = new RestRequest(loginMethd, Method.GET);
 
                 request.AddParameter("guid", guid);
                 request.AddParameter("password", password);
-                queryResult = client.Execute<ServiceResult<StaffViewModel>>(request).Data;
+                queryResult = client.Execute<ServiceResult<UsuarioViewModel>>(request).Data;
             }
             catch(Exception ex)
             {

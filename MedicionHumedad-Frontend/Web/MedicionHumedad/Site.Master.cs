@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OfficeHoteling
+namespace MedicionHumedad
 {
     public partial class SiteMainMaster : MasterPage
     {

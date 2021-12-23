@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OfficeHoteling {
+namespace MedicionHumedad {
     
     
     public partial class ViewSwitcher {

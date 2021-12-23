@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/SiteLogin.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="OfficeHoteling._Login" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/SiteLogin.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="MedicionHumedad._Login" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type='text/css'>
@@ -8,7 +8,7 @@
             <h1>Iniciar Sesión</h1>
             <p class="lead">Inicie sesion para empezar a utilizar la applicacion que le facilitara la medicion de humedad en tierra y sus predicciones. Utilize su Email para ingresar</p>
             <p>
-                Email:
+                Usuario:
             </p>
             <p>
                 <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
