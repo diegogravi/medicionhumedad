@@ -1,0 +1,18 @@
+===> 2021-12-21 23:39:16.587 -05:00 [Information] Starting web host
+===> 2021-12-21 23:39:17.322 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-21 23:39:17.678 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-21 23:39:17.858 -05:00 [Information] Request finished in 189.2087ms 200 text/html;charset=utf-8
+===> 2021-12-21 23:39:18.059 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-21 23:39:18.264 -05:00 [Information] Request finished in 204.5865ms 200 application/json;charset=utf-8
+===> 2021-12-21 23:39:20.430 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=dgravisaco001&password=Racing13  
+===> 2021-12-21 23:39:20.439 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-21 23:39:20.510 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-12-21 23:39:21.387 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-21 23:39:22.445 -05:00 [Information] Executed DbCommand ("79"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-12-21 23:39:22.507 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-21 23:39:22.522 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 2006.2153ms
+===> 2021-12-21 23:39:22.522 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-21 23:39:22.526 -05:00 [Information] Request finished in 2095.8597ms 200 application/json; charset=utf-8

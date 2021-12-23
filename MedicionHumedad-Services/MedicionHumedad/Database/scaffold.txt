@@ -1,0 +1,11 @@
+C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\MedicionHumedad\Data\MedicionHumedad.Data
+
+dotnet ef dbcontext scaffold "Server=LAPTOP-DIEGO;Database=MedicionHumedadDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -f
+
+--data-annotations 
+
+
+Scaffold-DbContext "Server=LAPTOP-DIEGO;Database=MedicionHumedadDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+
+
+

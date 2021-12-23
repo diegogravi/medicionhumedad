@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{00A9CCA1-BAC4-4D7E-A3D6-B144FE09699C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicionHumedad.Data", "Data\MedicionHumedad.Data\MedicionHumedad.Data.csproj", "{96776B34-6D30-4EF0-96E2-210858F83818}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{EC284D14-1C44-4537-9DE6-4359A85F80CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{88DD88C0-9F67-4A01-A69A-2087F1D720E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicionHumedad.Business", "Business\MedicionHumedad.Business\MedicionHumedad.Business.csproj", "{53758FDD-AE33-4772-A605-D9F4260E0FB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicionHumedad.Api", "Api\MedicionHumedad.Api\MedicionHumedad.Api.csproj", "{28A0C691-F6D5-4E1B-BA83-8A813B22D275}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{E977FE97-1732-44D7-8480-9A4CA920FECC}"
+	ProjectSection(SolutionItems) = preProject
+		Database\01-Structure-SQL2017.sql = Database\01-Structure-SQL2017.sql
+		Database\01-Structure.sql = Database\01-Structure.sql
+		Database\02-Data-SQL2017.sql = Database\02-Data-SQL2017.sql
+		Database\02-Data.sql = Database\02-Data.sql
+		Database\scaffold.txt = Database\scaffold.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96776B34-6D30-4EF0-96E2-210858F83818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96776B34-6D30-4EF0-96E2-210858F83818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96776B34-6D30-4EF0-96E2-210858F83818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96776B34-6D30-4EF0-96E2-210858F83818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53758FDD-AE33-4772-A605-D9F4260E0FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53758FDD-AE33-4772-A605-D9F4260E0FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53758FDD-AE33-4772-A605-D9F4260E0FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53758FDD-AE33-4772-A605-D9F4260E0FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A0C691-F6D5-4E1B-BA83-8A813B22D275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A0C691-F6D5-4E1B-BA83-8A813B22D275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A0C691-F6D5-4E1B-BA83-8A813B22D275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A0C691-F6D5-4E1B-BA83-8A813B22D275}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96776B34-6D30-4EF0-96E2-210858F83818} = {00A9CCA1-BAC4-4D7E-A3D6-B144FE09699C}
+		{53758FDD-AE33-4772-A605-D9F4260E0FB4} = {EC284D14-1C44-4537-9DE6-4359A85F80CF}
+		{28A0C691-F6D5-4E1B-BA83-8A813B22D275} = {88DD88C0-9F67-4A01-A69A-2087F1D720E1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52FB0E7C-E60C-4D55-B15F-9FDB8A8C0DA4}
+	EndGlobalSection
+EndGlobal

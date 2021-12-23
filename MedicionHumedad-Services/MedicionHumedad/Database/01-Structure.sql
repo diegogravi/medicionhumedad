@@ -1,0 +1,124 @@
+USE [MedicionHumedadDB]
+GO
+/****** Object:  Table [dbo].[Fruto]    Script Date: 12/22/2021 12:57:49 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Fruto](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [nvarchar](150) NOT NULL,
+ CONSTRAINT [PK_Fruto] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Medicion]    Script Date: 12/22/2021 12:57:49 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Medicion](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Porcentaje] [decimal](18, 2) NOT NULL,
+	[Fecha] [datetimeoffset](7) NOT NULL,
+	[Descripcion] [nvarchar](150) NULL,
+	[FrutoId] [int] NOT NULL,
+	[UsuarioId] [int] NOT NULL,
+	[SensorId] [int] NULL,
+ CONSTRAINT [PK_Medicion] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Plantacion]    Script Date: 12/22/2021 12:57:50 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Plantacion](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [nvarchar](250) NOT NULL,
+ CONSTRAINT [PK_Plantacion] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Rol]    Script Date: 12/22/2021 12:57:50 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Rol](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [nvarchar](150) NOT NULL,
+ CONSTRAINT [PK_Rol] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Sensor]    Script Date: 12/22/2021 12:57:50 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Sensor](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[FechaCreacion] [datetimeoffset](7) NOT NULL,
+	[Activo] [bit] NOT NULL,
+	[PlantacionId] [int] NULL,
+ CONSTRAINT [PK_Sensor] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuario]    Script Date: 12/22/2021 12:57:50 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuario](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[GUID] [nvarchar](50) NOT NULL,
+	[Nombre] [nvarchar](50) NOT NULL,
+	[Apellido] [nvarchar](50) NOT NULL,
+	[Activo] [bit] NOT NULL,
+	[Password] [nvarchar](250) NULL,
+	[PlantacionId] [int] NOT NULL,
+	[RolId] [int] NOT NULL,
+ CONSTRAINT [PK_Staff] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Medicion]  WITH CHECK ADD  CONSTRAINT [FK_Medicion_Fruto] FOREIGN KEY([FrutoId])
+REFERENCES [dbo].[Fruto] ([Id])
+GO
+ALTER TABLE [dbo].[Medicion] CHECK CONSTRAINT [FK_Medicion_Fruto]
+GO
+ALTER TABLE [dbo].[Medicion]  WITH CHECK ADD  CONSTRAINT [FK_Medicion_Usuario] FOREIGN KEY([UsuarioId])
+REFERENCES [dbo].[Usuario] ([Id])
+GO
+ALTER TABLE [dbo].[Medicion] CHECK CONSTRAINT [FK_Medicion_Usuario]
+GO
+ALTER TABLE [dbo].[Sensor]  WITH CHECK ADD  CONSTRAINT [FK_Sensor_Plantacion] FOREIGN KEY([PlantacionId])
+REFERENCES [dbo].[Plantacion] ([Id])
+GO
+ALTER TABLE [dbo].[Sensor] CHECK CONSTRAINT [FK_Sensor_Plantacion]
+GO
+ALTER TABLE [dbo].[Usuario]  WITH CHECK ADD  CONSTRAINT [FK_Usuario_Plantacion] FOREIGN KEY([PlantacionId])
+REFERENCES [dbo].[Plantacion] ([Id])
+GO
+ALTER TABLE [dbo].[Usuario] CHECK CONSTRAINT [FK_Usuario_Plantacion]
+GO
+ALTER TABLE [dbo].[Usuario]  WITH CHECK ADD  CONSTRAINT [FK_Usuario_Rol] FOREIGN KEY([RolId])
+REFERENCES [dbo].[Rol] ([Id])
+GO
+ALTER TABLE [dbo].[Usuario] CHECK CONSTRAINT [FK_Usuario_Rol]
+GO

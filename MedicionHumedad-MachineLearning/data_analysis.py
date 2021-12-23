@@ -13,7 +13,7 @@ def DataAnalysis(file_name):
     dframe, X_list, x_list = MakeCSV(file_name)
     days = [calendar.day_name[day] for day in range(0,7)]
     plt.style.use('fivethirtyeight')
-    for info in ['temp', 'humidity']:
+    for info in ['humidity']:
             i=0
             for day in days:    
                 plt.figure(figsize=(15,10))
@@ -24,7 +24,7 @@ def DataAnalysis(file_name):
                 i=i+1
 
     ### AVG TEMP VS TIME OF THE DAY (minutes) FOR ENTIRE DATASET
-    for info in ['temp','humidity']:
+    for info in ['humidity']:
         for time in ['minute','day_of_week','hour','month']:     
             plt.figure(figsize=(15,10))
             by = dframe.loc[:,[info,time]].groupby(time).mean()
@@ -41,6 +41,3 @@ def DataAnalysis(file_name):
             plt.close()
     print("Data Analysis Completed Succesfully!!!")
     return X_list, x_list
-
-file_name = 'data.csv'
-DataAnalysis(file_name)

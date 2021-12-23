@@ -1,0 +1,935 @@
+===> 2021-12-18 13:01:18.027 -05:00 [Information] Starting web host
+===> 2021-12-18 13:01:18.574 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 13:01:18.906 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger  
+===> 2021-12-18 13:01:18.999 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 13:01:19.028 -05:00 [Information] Request finished in 110.0279ms 301 
+===> 2021-12-18 13:01:19.093 -05:00 [Information] Request finished in 94.0725ms 200 text/html;charset=utf-8
+===> 2021-12-18 13:01:19.124 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui.css  
+===> 2021-12-18 13:01:19.124 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui-bundle.js  
+===> 2021-12-18 13:01:19.126 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/swagger-ui-standalone-preset.js  
+===> 2021-12-18 13:01:19.169 -05:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+===> 2021-12-18 13:01:19.169 -05:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+===> 2021-12-18 13:01:19.169 -05:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+===> 2021-12-18 13:01:19.172 -05:00 [Information] Request finished in 48.0353ms 200 application/javascript
+===> 2021-12-18 13:01:19.172 -05:00 [Information] Request finished in 48.0249ms 200 text/css
+===> 2021-12-18 13:01:19.172 -05:00 [Information] Request finished in 45.7959ms 200 application/javascript
+===> 2021-12-18 13:01:19.394 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 13:01:19.452 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/favicon-32x32.png  
+===> 2021-12-18 13:01:19.456 -05:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+===> 2021-12-18 13:01:19.456 -05:00 [Information] Request finished in 4.7191ms 200 image/png
+===> 2021-12-18 13:01:19.542 -05:00 [Information] Request finished in 148.0733ms 200 application/json;charset=utf-8
+===> 2021-12-18 13:01:36.859 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=rd&hourStart=dd&repetitions=4  
+===> 2021-12-18 13:01:36.868 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:01:36.945 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:01:37.085 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:01:37.097 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 147.2195ms
+===> 2021-12-18 13:01:37.097 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:01:37.099 -05:00 [Information] Request finished in 239.3229ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:01:59.384 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-23&hourStart=12%3A11&repetitions=9  
+===> 2021-12-18 13:01:59.387 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:01:59.388 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:01:59.390 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:01:59.391 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 3.4004ms
+===> 2021-12-18 13:01:59.392 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:01:59.392 -05:00 [Information] Request finished in 7.9961ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:07:40.560 -05:00 [Information] Starting web host
+===> 2021-12-18 13:07:40.997 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 13:07:41.117 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 13:07:41.244 -05:00 [Information] Request finished in 130.7483ms 200 text/html;charset=utf-8
+===> 2021-12-18 13:07:41.484 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 13:07:41.604 -05:00 [Information] Request finished in 120.558ms 200 application/json;charset=utf-8
+===> 2021-12-18 13:08:03.683 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=19%3A11&repetitions=3  
+===> 2021-12-18 13:08:03.697 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:08:03.778 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:10:29.641 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:10:29.658 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 145873.6374ms
+===> 2021-12-18 13:10:29.659 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:10:29.662 -05:00 [Information] Request finished in 145979.2013ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:16:32.122 -05:00 [Information] Starting web host
+===> 2021-12-18 13:16:32.578 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 13:16:32.709 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 13:16:32.840 -05:00 [Information] Request finished in 133.9729ms 200 text/html;charset=utf-8
+===> 2021-12-18 13:16:33.004 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 13:16:33.133 -05:00 [Information] Request finished in 128.0694ms 200 application/json;charset=utf-8
+===> 2021-12-18 13:16:53.898 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=12%3A11&repetitions=3  
+===> 2021-12-18 13:16:53.906 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:16:53.980 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:18:28.688 -05:00 [Information] Starting web host
+===> 2021-12-18 13:18:29.136 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 13:18:29.279 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 13:18:29.412 -05:00 [Information] Request finished in 138.7067ms 200 text/html;charset=utf-8
+===> 2021-12-18 13:18:29.583 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 13:18:29.727 -05:00 [Information] Request finished in 144.1438ms 200 application/json;charset=utf-8
+===> 2021-12-18 13:18:40.456 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=19%3A11&repetitions=3  
+===> 2021-12-18 13:18:40.463 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:18:40.527 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:25:45.523 -05:00 [Information] Starting web host
+===> 2021-12-18 13:25:45.962 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 13:25:46.104 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 13:25:46.244 -05:00 [Information] Request finished in 148.8599ms 200 text/html;charset=utf-8
+===> 2021-12-18 13:25:46.422 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 13:25:46.542 -05:00 [Information] Request finished in 119.4605ms 200 application/json;charset=utf-8
+===> 2021-12-18 13:26:16.796 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=12%3A11&repetitions=3  
+===> 2021-12-18 13:26:16.806 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:26:16.888 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:26:21.401 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:26:21.416 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 4521.0774ms
+===> 2021-12-18 13:26:21.417 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:26:21.419 -05:00 [Information] Request finished in 4623.0006ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:26:34.084 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=12%3A11&repetitions=8  
+===> 2021-12-18 13:26:34.089 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:26:34.090 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:26:34.176 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:26:34.178 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 87.6086ms
+===> 2021-12-18 13:26:34.178 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:26:34.179 -05:00 [Information] Request finished in 95.5872ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:26:42.038 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=12%3A11&repetitions=10  
+===> 2021-12-18 13:26:42.039 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:26:42.040 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:26:42.091 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:26:42.092 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 51.5599ms
+===> 2021-12-18 13:26:42.092 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:26:42.093 -05:00 [Information] Request finished in 55.3081ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:31:41.101 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=12%3A11&repetitions=10  
+===> 2021-12-18 13:31:41.103 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:31:41.104 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:31:41.188 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:31:41.189 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 85.2233ms
+===> 2021-12-18 13:31:41.190 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:31:41.190 -05:00 [Information] Request finished in 89.1579ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:31:41.270 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/favicon.ico  
+===> 2021-12-18 13:31:41.274 -05:00 [Information] Request finished in 3.6391ms 404 
+===> 2021-12-18 13:31:46.930 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-31&hourStart=12%3A11&repetitions=3  
+===> 2021-12-18 13:31:46.931 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:31:46.933 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:31:46.962 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:31:46.964 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 30.3159ms
+===> 2021-12-18 13:31:46.964 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:31:46.965 -05:00 [Information] Request finished in 35.4091ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:43:44.416 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:43:44.417 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:43:44.418 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:43:44.490 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:43:44.491 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 73.1023ms
+===> 2021-12-18 13:43:44.491 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:43:44.492 -05:00 [Information] Request finished in 79.9691ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:44:15.426 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:44:15.431 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:44:15.432 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:44:36.259 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:44:36.260 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 20827.5039ms
+===> 2021-12-18 13:44:36.261 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:44:36.261 -05:00 [Information] Request finished in 20835.4739ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:45:01.094 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:45:01.096 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:45:01.097 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:45:13.262 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:45:13.265 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 12166.7346ms
+===> 2021-12-18 13:45:13.265 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:45:13.265 -05:00 [Information] Request finished in 12170.7823ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:45:37.115 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:45:37.116 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:45:37.117 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:45:37.186 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:45:37.188 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 70.6686ms
+===> 2021-12-18 13:45:37.188 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:45:37.188 -05:00 [Information] Request finished in 73.2551ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:46:02.788 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:46:02.791 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:46:02.792 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:46:02.882 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:46:02.884 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 92.0471ms
+===> 2021-12-18 13:46:02.884 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:46:02.885 -05:00 [Information] Request finished in 97.1698ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:48:32.903 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:48:32.908 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:48:32.908 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:48:32.979 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:48:32.980 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 71.7095ms
+===> 2021-12-18 13:48:32.981 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:48:32.981 -05:00 [Information] Request finished in 78.7755ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:49:07.598 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:49:07.599 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:49:07.599 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:49:07.684 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:49:07.686 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 86.2809ms
+===> 2021-12-18 13:49:07.686 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:49:07.687 -05:00 [Information] Request finished in 88.4216ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:50:14.855 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:50:14.860 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:14.860 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:50:14.944 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:50:14.947 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 86.662ms
+===> 2021-12-18 13:50:14.948 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:14.949 -05:00 [Information] Request finished in 94.5245ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:50:18.583 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:50:18.584 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:18.584 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:50:18.637 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:50:18.639 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 54.6641ms
+===> 2021-12-18 13:50:18.639 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:18.640 -05:00 [Information] Request finished in 57.1402ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:50:20.193 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:50:20.193 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:20.194 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:50:20.258 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:50:20.259 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 65.2843ms
+===> 2021-12-18 13:50:20.260 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:20.260 -05:00 [Information] Request finished in 66.8021ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:50:22.181 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:50:22.182 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:22.182 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:50:22.239 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:50:22.240 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 57.3875ms
+===> 2021-12-18 13:50:22.240 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:22.240 -05:00 [Information] Request finished in 62.6576ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:50:23.442 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:50:23.443 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:23.443 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:50:24.273 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 829.6612ms
+===> 2021-12-18 13:50:24.360 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:50:24.833 -05:00 [Error] Something went wrong: System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: The response ended prematurely.
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at MedicionHumedad.Business.Service.OrchestratorServiceAsync.GetPredictionData(String dateStart, String hourStart, Int32 repetitions) in C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\TFG\MedicionHumedad-Services\MedicionHumedad\Business\MedicionHumedad.Business\Service\Orchestrator\OrchestratorServiceAsync.cs:line 42
+   at MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData(String dateStart, String hourStart, Int32 repetitions) in C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\TFG\MedicionHumedad-Services\MedicionHumedad\Api\MedicionHumedad.Api\Controllers\OrchestratorController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MedicionHumedad.Api.ExceptionHandler.Invoke(HttpContext context) in C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\TFG\MedicionHumedad-Services\MedicionHumedad\Api\MedicionHumedad.Api\ExceptionHandler.cs:line 26
+===> 2021-12-18 13:50:24.844 -05:00 [Error] ERROR FOUND
+===> 2021-12-18 13:50:24.844 -05:00 [Information] Request finished in 1402.0503ms 500 application/json
+===> 2021-12-18 13:54:14.191 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:54:14.196 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:54:14.197 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:54:14.278 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:54:14.280 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 82.8725ms
+===> 2021-12-18 13:54:14.280 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:54:14.280 -05:00 [Information] Request finished in 89.9977ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:54:35.641 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:54:35.641 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:54:35.642 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:54:35.722 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:54:35.723 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 80.3944ms
+===> 2021-12-18 13:54:35.723 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:54:35.723 -05:00 [Information] Request finished in 82.19ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:55:58.713 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:55:58.721 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:55:58.721 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:55:58.811 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:55:58.813 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 91.415ms
+===> 2021-12-18 13:55:58.814 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:55:58.814 -05:00 [Information] Request finished in 100.7266ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:58:45.791 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:58:45.797 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:58:45.798 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:58:45.869 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:58:45.871 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 72.9385ms
+===> 2021-12-18 13:58:45.871 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:58:45.872 -05:00 [Information] Request finished in 80.1568ms 200 application/json; charset=utf-8
+===> 2021-12-18 13:59:51.383 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 13:59:51.384 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:59:51.384 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 13:59:51.447 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 13:59:51.448 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 64.221ms
+===> 2021-12-18 13:59:51.449 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 13:59:51.449 -05:00 [Information] Request finished in 65.6042ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:07:12.948 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:07:12.953 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:07:12.953 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:07:13.013 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:07:13.014 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 60.2273ms
+===> 2021-12-18 14:07:13.014 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:07:13.014 -05:00 [Information] Request finished in 65.555ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:07:37.040 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:07:37.041 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:07:37.041 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:07:37.113 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:07:37.115 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 73.2206ms
+===> 2021-12-18 14:07:37.115 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:07:37.115 -05:00 [Information] Request finished in 74.8446ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:08:42.109 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:08:42.109 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:08:42.116 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:08:42.185 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:08:42.186 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 69.4495ms
+===> 2021-12-18 14:08:42.186 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:08:42.186 -05:00 [Information] Request finished in 77.2721ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:09:02.862 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:09:02.863 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:09:02.863 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:09:02.937 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:09:02.938 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 74.4146ms
+===> 2021-12-18 14:09:02.938 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:09:02.938 -05:00 [Information] Request finished in 76.1459ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:11:49.770 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:11:49.776 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:11:49.776 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:11:49.854 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:11:49.855 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 78.4556ms
+===> 2021-12-18 14:11:49.855 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:11:49.855 -05:00 [Information] Request finished in 85.8168ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:12:01.671 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:12:01.672 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:01.672 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:12:01.743 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:12:01.744 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 71.5219ms
+===> 2021-12-18 14:12:01.744 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:01.744 -05:00 [Information] Request finished in 72.9657ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:12:12.352 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-21&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:12:12.353 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:12.353 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:12:12.408 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:12:12.409 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 55.1337ms
+===> 2021-12-18 14:12:12.409 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:12.409 -05:00 [Information] Request finished in 56.8606ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:12:31.123 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-21&hourStart=12:11&repetitions=9  
+===> 2021-12-18 14:12:31.123 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:31.123 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:12:31.189 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:12:31.191 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 66.9825ms
+===> 2021-12-18 14:12:31.191 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:31.192 -05:00 [Information] Request finished in 69.4445ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:12:42.576 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=5  
+===> 2021-12-18 14:12:42.576 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:42.576 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:12:42.604 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:12:42.605 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 28.3456ms
+===> 2021-12-18 14:12:42.605 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:12:42.605 -05:00 [Information] Request finished in 29.2894ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:13:08.829 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=5  
+===> 2021-12-18 14:13:08.829 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:08.829 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:13:08.867 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:13:08.868 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 39.1303ms
+===> 2021-12-18 14:13:08.868 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:08.868 -05:00 [Information] Request finished in 39.8615ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:13:15.517 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=5  
+===> 2021-12-18 14:13:15.517 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:15.517 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:13:15.548 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:13:15.549 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 31.2503ms
+===> 2021-12-18 14:13:15.549 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:15.549 -05:00 [Information] Request finished in 32.093ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:13:21.182 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=10  
+===> 2021-12-18 14:13:21.182 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:21.183 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:13:21.236 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:13:21.237 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 54.0839ms
+===> 2021-12-18 14:13:21.237 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:21.237 -05:00 [Information] Request finished in 55.1287ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:13:39.465 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=15  
+===> 2021-12-18 14:13:39.465 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:39.465 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:13:39.554 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:13:39.555 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 89.9723ms
+===> 2021-12-18 14:13:39.555 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:13:39.555 -05:00 [Information] Request finished in 90.6575ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:51:19.087 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=15  
+===> 2021-12-18 14:51:19.092 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:51:19.093 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:51:19.205 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:51:19.205 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 112.6093ms
+===> 2021-12-18 14:51:19.205 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:51:19.206 -05:00 [Information] Request finished in 118.7959ms 200 application/json; charset=utf-8
+===> 2021-12-18 14:51:26.330 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=10  
+===> 2021-12-18 14:51:26.330 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:51:26.330 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 14:51:26.383 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 14:51:26.384 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 53.697ms
+===> 2021-12-18 14:51:26.384 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 14:51:26.384 -05:00 [Information] Request finished in 54.3367ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:01:15.663 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=19:11&repetitions=10  
+===> 2021-12-18 15:01:15.663 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:01:15.663 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:01:15.737 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:01:15.738 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 74.1495ms
+===> 2021-12-18 15:01:15.738 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:01:15.738 -05:00 [Information] Request finished in 74.8894ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:01:24.597 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=19:11&repetitions=10  
+===> 2021-12-18 15:01:24.598 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:01:24.598 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:01:24.653 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:01:24.653 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 54.989ms
+===> 2021-12-18 15:01:24.653 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:01:24.653 -05:00 [Information] Request finished in 55.8064ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:01:52.389 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=20:11&repetitions=10  
+===> 2021-12-18 15:01:52.389 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:01:52.389 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:01:52.464 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:01:52.465 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 75.8968ms
+===> 2021-12-18 15:01:52.465 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:01:52.465 -05:00 [Information] Request finished in 76.6282ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:02:00.797 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=19:11&repetitions=10  
+===> 2021-12-18 15:02:00.797 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:00.798 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:02:00.858 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:02:00.858 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 60.2183ms
+===> 2021-12-18 15:02:00.858 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:00.858 -05:00 [Information] Request finished in 61.062ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:02:11.454 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=16:11&repetitions=10  
+===> 2021-12-18 15:02:11.454 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:11.455 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:02:11.515 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:02:11.515 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 60.5851ms
+===> 2021-12-18 15:02:11.516 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:11.516 -05:00 [Information] Request finished in 61.8302ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:02:19.938 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=18:11&repetitions=10  
+===> 2021-12-18 15:02:19.939 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:19.939 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:02:19.994 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:02:19.995 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 56.151ms
+===> 2021-12-18 15:02:19.995 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:19.995 -05:00 [Information] Request finished in 56.7714ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:02:27.339 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=18:11&repetitions=10  
+===> 2021-12-18 15:02:27.339 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:27.339 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:02:27.388 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:02:27.388 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 49.3967ms
+===> 2021-12-18 15:02:27.388 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:27.388 -05:00 [Information] Request finished in 49.8859ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:02:42.714 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=18:11&repetitions=11  
+===> 2021-12-18 15:02:42.714 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:42.714 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:02:42.790 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:02:42.791 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 76.3752ms
+===> 2021-12-18 15:02:42.791 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:02:42.791 -05:00 [Information] Request finished in 77.1312ms 200 application/json; charset=utf-8
+===> 2021-12-18 15:05:50.921 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-06-24&hourStart=18:11&repetitions=11  
+===> 2021-12-18 15:05:50.922 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:05:50.922 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 15:05:51.016 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 15:05:51.017 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 93.6593ms
+===> 2021-12-18 15:05:51.017 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 15:05:51.017 -05:00 [Information] Request finished in 95.5405ms 200 application/json; charset=utf-8
+===> 2021-12-18 17:46:31.221 -05:00 [Information] Starting web host
+===> 2021-12-18 17:46:31.792 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 17:46:32.078 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 17:46:32.236 -05:00 [Information] Request finished in 162.6452ms 200 text/html;charset=utf-8
+===> 2021-12-18 17:46:32.450 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 17:46:32.659 -05:00 [Information] Request finished in 208.4678ms 200 application/json;charset=utf-8
+===> 2021-12-18 17:55:49.165 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=3&plantacionId=1  
+===> 2021-12-18 17:55:49.179 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 17:55:49.243 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 17:55:50.140 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 17:55:51.101 -05:00 [Information] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 17:55:51.144 -05:00 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 17:55:51.156 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 17:55:51.172 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 1921.3438ms
+===> 2021-12-18 17:55:51.173 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 17:55:51.180 -05:00 [Information] Request finished in 2018.8698ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:00:38.098 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 18:00:38.102 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:00:38.116 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:00:38.628 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:00:38.630 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 513.7654ms
+===> 2021-12-18 18:00:38.630 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:00:38.631 -05:00 [Information] Request finished in 537.6978ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:00:54.836 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:00:54.838 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:00:54.840 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:00:57.864 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:00:57.869 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:00:57.871 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:00:57.872 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:00:57.873 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 3032.5509ms
+===> 2021-12-18 18:00:57.873 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:00:57.873 -05:00 [Information] Request finished in 3037.7925ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:01:32.813 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=6&plantacionId=1  
+===> 2021-12-18 18:01:32.815 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:01:32.816 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:01:32.827 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:01:32.838 -05:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:01:32.840 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:01:32.841 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:01:32.842 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 25.0158ms
+===> 2021-12-18 18:01:32.843 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:01:32.846 -05:00 [Information] Request finished in 33.3364ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:01:39.355 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 18:01:39.356 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:01:39.357 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:01:39.417 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:01:39.418 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 60.9002ms
+===> 2021-12-18 18:01:39.418 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:01:39.419 -05:00 [Information] Request finished in 64.0076ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:01:53.209 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:01:53.210 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:01:53.210 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:01:53.213 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:01:53.218 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:01:53.222 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:01:53.223 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:01:53.224 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 13.6928ms
+===> 2021-12-18 18:01:53.225 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:01:53.225 -05:00 [Information] Request finished in 16.5742ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:04:59.646 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:04:59.647 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:04:59.648 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:04:59.650 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:04:59.659 -05:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:04:59.673 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:04:59.678 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:04:59.679 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 31.0561ms
+===> 2021-12-18 18:04:59.679 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:04:59.680 -05:00 [Information] Request finished in 37.828ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:05:03.012 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:05:03.013 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:05:03.014 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:05:03.016 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:05:03.020 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:05:03.028 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:05:03.029 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:05:03.030 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 15.4135ms
+===> 2021-12-18 18:05:03.030 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:05:03.030 -05:00 [Information] Request finished in 17.6798ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:05:18.683 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:05:18.684 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:05:18.685 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:05:26.684 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:05:27.142 -05:00 [Error] An exception occurred while iterating over the results of a query for context type '"MedicionHumedad.Data.Entity.MedicionHumedadDBContext"'."
+""System.Threading.ThreadAbortException: System error.
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.Threading.ThreadAbortException: System error.
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+===> 2021-12-18 18:05:42.065 -05:00 [Error] Failed executing DbCommand ("255"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:05:42.221 -05:00 [Error] An exception occurred while iterating over the results of a query for context type '"MedicionHumedad.Data.Entity.MedicionHumedadDBContext"'."
+""System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+===> 2021-12-18 18:05:43.291 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 24605.5875ms
+===> 2021-12-18 18:05:43.392 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:05:43.785 -05:00 [Error] Something went wrong: System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at MedicionHumedad.Data.Repository.RepositoryAsync`1.GetAll(Func`2 include) in C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\TFG\MedicionHumedad-Services\MedicionHumedad\Data\MedicionHumedad.Data\Repository\RepositoryAsync.cs:line 29
+   at MedicionHumedad.Business.Service.OrchestratorServiceAsync.GetMedicionesData(Int32 lecturas, Int32 plantacionId) in C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\TFG\MedicionHumedad-Services\MedicionHumedad\Business\MedicionHumedad.Business\Service\Orchestrator\OrchestratorServiceAsync.cs:line 66
+   at MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData(Int32 lecturas, Int32 plantacionId) in C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\TFG\MedicionHumedad-Services\MedicionHumedad\Api\MedicionHumedad.Api\Controllers\OrchestratorController.cs:line 47
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MedicionHumedad.Api.ExceptionHandler.Invoke(HttpContext context) in C:\Users\diego\OneDrive\Documents\Universidad Siglo 21\Seminario\repo\TFG\MedicionHumedad-Services\MedicionHumedad\Api\MedicionHumedad.Api\ExceptionHandler.cs:line 26
+===> 2021-12-18 18:05:43.796 -05:00 [Error] ERROR FOUND
+===> 2021-12-18 18:05:43.797 -05:00 [Information] Request finished in 25114.1119ms 500 application/json
+===> 2021-12-18 18:06:08.028 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:06:08.028 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:06:08.029 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:06:10.387 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:06:10.432 -05:00 [Information] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:06:10.469 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:07:13.791 -05:00 [Information] Starting web host
+===> 2021-12-18 18:07:14.279 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 18:07:14.412 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 18:07:14.531 -05:00 [Information] Request finished in 123.261ms 200 text/html;charset=utf-8
+===> 2021-12-18 18:07:14.683 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 18:07:14.832 -05:00 [Information] Request finished in 148.94ms 200 application/json;charset=utf-8
+===> 2021-12-18 18:07:18.483 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:07:18.488 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:07:18.551 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:07:21.943 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:07:22.648 -05:00 [Information] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:07:22.787 -05:00 [Information] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:07:23.797 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:09:16.183 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:09:16.274 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:12:21.938 -05:00 [Information] Starting web host
+===> 2021-12-18 18:12:22.410 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 18:12:22.568 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 18:12:22.697 -05:00 [Information] Request finished in 135.32ms 200 text/html;charset=utf-8
+===> 2021-12-18 18:12:22.853 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 18:12:22.997 -05:00 [Information] Request finished in 143.679ms 200 application/json;charset=utf-8
+===> 2021-12-18 18:12:41.264 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:12:41.269 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:12:41.329 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:12:45.995 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:12:46.700 -05:00 [Information] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:12:46.840 -05:00 [Information] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:12:48.277 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:13:08.802 -05:00 [Information] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:13:18.880 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:13:18.897 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 37559.9659ms
+===> 2021-12-18 18:13:18.899 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:13:18.904 -05:00 [Information] Request finished in 37640.2125ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:14:13.644 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:14:13.647 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:14:13.649 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:14:16.137 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:14:16.146 -05:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:14:16.213 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:21:47.843 -05:00 [Information] Starting web host
+===> 2021-12-18 18:21:48.330 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 18:21:48.478 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:21:48.478 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 18:21:48.478 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:21:48.545 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:21:48.545 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:21:48.643 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:21:48.643 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:21:48.664 -05:00 [Information] Request finished in 190.357ms 200 text/html;charset=utf-8
+===> 2021-12-18 18:21:55.235 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 18:21:55.347 -05:00 [Information] Request finished in 111.2954ms 200 application/json;charset=utf-8
+===> 2021-12-18 18:21:55.906 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:21:55.906 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:21:56.774 -05:00 [Information] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:21:56.774 -05:00 [Information] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:21:56.976 -05:00 [Information] Executed DbCommand ("84"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:21:56.976 -05:00 [Information] Executed DbCommand ("84"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:22:05.260 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:22:05.260 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:22:05.275 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 16625.4693ms
+===> 2021-12-18 18:22:05.275 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 16625.4674ms
+===> 2021-12-18 18:22:05.276 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:05.276 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:05.279 -05:00 [Information] Request finished in 16807.6445ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:22:05.279 -05:00 [Information] Request finished in 16807.6413ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:22:18.588 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:22:18.593 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:18.614 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:22:20.593 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:22:20.598 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:22:20.601 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:22:21.301 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:22:21.302 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 2682.1472ms
+===> 2021-12-18 18:22:21.302 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:21.303 -05:00 [Information] Request finished in 2715.8864ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:22:40.713 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=6&plantacionId=1  
+===> 2021-12-18 18:22:40.715 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:40.717 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:22:40.724 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:22:40.730 -05:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:22:40.735 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:22:40.736 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:22:40.737 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 19.6389ms
+===> 2021-12-18 18:22:40.737 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:40.737 -05:00 [Information] Request finished in 24.5263ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:22:47.261 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=6&plantacionId=1  
+===> 2021-12-18 18:22:47.262 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:47.263 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:22:47.265 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:22:47.268 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:22:47.270 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:22:47.271 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:22:47.272 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 9.2726ms
+===> 2021-12-18 18:22:47.273 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:47.273 -05:00 [Information] Request finished in 11.7781ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:22:57.364 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=6&plantacionId=1  
+===> 2021-12-18 18:22:57.365 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:57.366 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:22:57.370 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:22:57.374 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:22:57.377 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:22:57.379 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:22:57.380 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 12.8706ms
+===> 2021-12-18 18:22:57.380 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:22:57.381 -05:00 [Information] Request finished in 16.682ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:23:04.089 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=6&plantacionId=1  
+===> 2021-12-18 18:23:04.090 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:04.091 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:23:04.096 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:23:04.101 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:23:04.107 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:23:04.109 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:23:04.111 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 18.9694ms
+===> 2021-12-18 18:23:04.111 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:04.112 -05:00 [Information] Request finished in 23.0036ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:23:11.533 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 18:23:11.534 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:11.540 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:23:11.914 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:23:11.915 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 374.5462ms
+===> 2021-12-18 18:23:11.915 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:11.916 -05:00 [Information] Request finished in 382.9014ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:23:16.019 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 18:23:16.019 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:16.020 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:23:16.022 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:23:16.026 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:23:16.031 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:23:16.032 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:23:16.034 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 14.1928ms
+===> 2021-12-18 18:23:16.034 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:16.035 -05:00 [Information] Request finished in 16.1547ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:23:20.888 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=10&plantacionId=1  
+===> 2021-12-18 18:23:20.889 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:20.890 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:23:20.893 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 18:23:20.897 -05:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 18:23:20.900 -05:00 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 18:23:20.901 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:23:20.902 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 11.6454ms
+===> 2021-12-18 18:23:20.902 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:20.902 -05:00 [Information] Request finished in 14.0775ms 200 application/json; charset=utf-8
+===> 2021-12-18 18:23:32.851 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 18:23:32.851 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:32.852 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 18:23:32.935 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 18:23:32.937 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 85.2827ms
+===> 2021-12-18 18:23:32.937 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 18:23:32.938 -05:00 [Information] Request finished in 86.9355ms 200 application/json; charset=utf-8
+===> 2021-12-18 20:31:47.742 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=dgravisaco001&password=Racing13  
+===> 2021-12-18 20:31:47.750 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-18 20:31:47.773 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-12-18 20:31:47.792 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 20:31:47.994 -05:00 [Information] Executed DbCommand ("55"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-12-18 20:31:48.023 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 20:31:48.029 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 256.0319ms
+===> 2021-12-18 20:31:48.030 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-18 20:31:48.030 -05:00 [Information] Request finished in 287.9915ms 200 application/json; charset=utf-8
+===> 2021-12-18 20:32:02.567 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Usuario/GetAllUsuario  
+===> 2021-12-18 20:32:02.568 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-12-18 20:32:02.581 -05:00 [Information] Route matched with "{action = \"GetAllUsuario\", controller = \"Usuario\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsuario()" on controller "MedicionHumedad.Api.Controllers.UsuarioController" ("MedicionHumedad.Api").
+===> 2021-12-18 20:32:02.588 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 20:32:02.605 -05:00 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]"
+===> 2021-12-18 20:32:02.643 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 20:32:02.645 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)" in 64.0664ms
+===> 2021-12-18 20:32:02.645 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.UsuarioController.GetAllUsuario (MedicionHumedad.Api)"'
+===> 2021-12-18 20:32:02.646 -05:00 [Information] Request finished in 78.9913ms 200 application/json; charset=utf-8
+===> 2021-12-18 20:34:33.876 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=9  
+===> 2021-12-18 20:34:33.880 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 20:34:33.884 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 20:34:34.012 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 20:34:34.013 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 129.1488ms
+===> 2021-12-18 20:34:34.013 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 20:34:34.014 -05:00 [Information] Request finished in 138.0938ms 200 application/json; charset=utf-8
+===> 2021-12-18 20:34:46.972 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetPredictionData?dateStart=2021-12-24&hourStart=12:11&repetitions=5  
+===> 2021-12-18 20:34:46.973 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 20:34:46.973 -05:00 [Information] Route matched with "{action = \"GetPredictionData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPredictionData(System.String, System.String, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 20:34:47.023 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 20:34:47.024 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)" in 50.2986ms
+===> 2021-12-18 20:34:47.024 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetPredictionData (MedicionHumedad.Api)"'
+===> 2021-12-18 20:34:47.025 -05:00 [Information] Request finished in 52.5692ms 200 application/json; charset=utf-8
+===> 2021-12-18 20:34:56.576 -05:00 [Information] Request starting HTTP/1.1 GET https://localhost:44399/api/Orchestrator/GetMedicionesData?lecturas=5&plantacionId=1  
+===> 2021-12-18 20:34:56.577 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 20:34:56.578 -05:00 [Information] Route matched with "{action = \"GetMedicionesData\", controller = \"Orchestrator\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesData(Int32, Int32)" on controller "MedicionHumedad.Api.Controllers.OrchestratorController" ("MedicionHumedad.Api").
+===> 2021-12-18 20:34:56.581 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 20:34:56.586 -05:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]"
+===> 2021-12-18 20:34:56.590 -05:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Activo], [s].[FechaCreacion], [s].[PlantacionId]
+FROM [Sensor] AS [s]"
+===> 2021-12-18 20:34:56.591 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Data.Models.LineChartData, MedicionHumedad.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 20:34:56.592 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)" in 13.4287ms
+===> 2021-12-18 20:34:56.592 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.OrchestratorController.GetMedicionesData (MedicionHumedad.Api)"'
+===> 2021-12-18 20:34:56.593 -05:00 [Information] Request finished in 16.512ms 200 application/json; charset=utf-8
+===> 2021-12-18 20:37:05.186 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Reservas/GetReservasByUsuarioId?UsuarioId=1  
+===> 2021-12-18 20:37:05.199 -05:00 [Information] Request finished in 12.4031ms 404 
+===> 2021-12-18 21:08:56.546 -05:00 [Information] Starting web host
+===> 2021-12-18 21:08:57.180 -05:00 [Information] User profile is available. Using '"C:\Users\diego\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-12-18 21:08:57.393 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/index.html  
+===> 2021-12-18 21:08:57.574 -05:00 [Information] Request finished in 186.0889ms 200 text/html;charset=utf-8
+===> 2021-12-18 21:08:57.795 -05:00 [Information] Request starting HTTP/2.0 GET https://localhost:44399/swagger/v1/swagger.json  
+===> 2021-12-18 21:08:57.940 -05:00 [Information] Request finished in 145.2787ms 200 application/json;charset=utf-8
+===> 2021-12-18 21:09:03.555 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=dgravisaco001&password=Racing13  
+===> 2021-12-18 21:09:03.565 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-18 21:09:03.664 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-12-18 21:09:04.705 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 21:09:05.692 -05:00 [Information] Executed DbCommand ("115"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-12-18 21:09:05.764 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 21:09:05.786 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 2113.6216ms
+===> 2021-12-18 21:09:05.787 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-18 21:09:05.792 -05:00 [Information] Request finished in 2237.998ms 200 application/json; charset=utf-8
+===> 2021-12-18 21:09:11.747 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Medicion/GetMedicionesByUsuarioId?usuarioId=1  
+===> 2021-12-18 21:09:11.753 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.MedicionController.GetMedicionesByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-12-18 21:09:11.767 -05:00 [Information] Route matched with "{action = \"GetMedicionesByUsuarioId\", controller = \"Medicion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesByUsuarioId(Int32)" on controller "MedicionHumedad.Api.Controllers.MedicionController" ("MedicionHumedad.Api").
+===> 2021-12-18 21:09:11.842 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 21:09:11.877 -05:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__usuarioId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]
+WHERE [m].[UsuarioId] = @__usuarioId_0"
+===> 2021-12-18 21:09:11.911 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.MedicionViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 21:09:11.922 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.MedicionController.GetMedicionesByUsuarioId (MedicionHumedad.Api)" in 154.8585ms
+===> 2021-12-18 21:09:11.922 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.MedicionController.GetMedicionesByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-12-18 21:09:11.923 -05:00 [Information] Request finished in 176.1767ms 200 application/json; charset=utf-8
+===> 2021-12-18 22:02:36.081 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Login/Login?guid=dgravisaco001&password=Racing13  
+===> 2021-12-18 22:02:36.086 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-18 22:02:36.089 -05:00 [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String)" on controller "MedicionHumedad.Api.Controllers.LoginController" ("MedicionHumedad.Api").
+===> 2021-12-18 22:02:36.109 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 22:02:36.148 -05:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__guid_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Activo], [u].[Apellido], [u].[GUID], [u].[Nombre], [u].[Password], [u].[PlantacionId], [u].[RolId]
+FROM [Usuario] AS [u]
+WHERE [u].[GUID] = @__guid_0"
+===> 2021-12-18 22:02:36.151 -05:00 [Information] Executing ObjectResult, writing value of type '"MedicionHumedad.Business.Service.ServiceResult`1[[MedicionHumedad.Business.ViewModels.UsuarioViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 22:02:36.153 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)" in 63.5421ms
+===> 2021-12-18 22:02:36.154 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.LoginController.Login (MedicionHumedad.Api)"'
+===> 2021-12-18 22:02:36.154 -05:00 [Information] Request finished in 73.2302ms 200 application/json; charset=utf-8
+===> 2021-12-18 22:02:42.971 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:49963/api/Medicion/GetMedicionesByUsuarioId?usuarioId=1  
+===> 2021-12-18 22:02:42.977 -05:00 [Information] Executing endpoint '"MedicionHumedad.Api.Controllers.MedicionController.GetMedicionesByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-12-18 22:02:42.978 -05:00 [Information] Route matched with "{action = \"GetMedicionesByUsuarioId\", controller = \"Medicion\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMedicionesByUsuarioId(Int32)" on controller "MedicionHumedad.Api.Controllers.MedicionController" ("MedicionHumedad.Api").
+===> 2021-12-18 22:02:42.984 -05:00 [Information] Entity Framework Core "3.1.4" initialized '"MedicionHumedadDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+===> 2021-12-18 22:02:42.994 -05:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__usuarioId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [m].[Id], [m].[Descripcion], [m].[Fecha], [m].[FrutoId], [m].[Porcentaje], [m].[SensorId], [m].[UsuarioId]
+FROM [Medicion] AS [m]
+WHERE [m].[UsuarioId] = @__usuarioId_0"
+===> 2021-12-18 22:02:42.996 -05:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MedicionHumedad.Business.ViewModels.MedicionViewModel, MedicionHumedad.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+===> 2021-12-18 22:02:42.998 -05:00 [Information] Executed action "MedicionHumedad.Api.Controllers.MedicionController.GetMedicionesByUsuarioId (MedicionHumedad.Api)" in 19.5041ms
+===> 2021-12-18 22:02:42.999 -05:00 [Information] Executed endpoint '"MedicionHumedad.Api.Controllers.MedicionController.GetMedicionesByUsuarioId (MedicionHumedad.Api)"'
+===> 2021-12-18 22:02:42.999 -05:00 [Information] Request finished in 28.9092ms 200 application/json; charset=utf-8
